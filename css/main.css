@@ -1,0 +1,251 @@
+.owl-carou {
+    background-color: #fec225;
+}
+
+.content {
+    padding-top: 100px;
+    width: 100%;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+.pr {
+    padding: 50px 50px;
+}
+
+.bg_head {
+    background-color: #c81f34;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.navbar-collapse .nav-link {
+    color: white;
+}
+
+.headq {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.headq .active {
+    background-color: #fec225;
+    border-radius: 25px;
+    color: #c81f34;
+}
+
+.nav-link {
+    color: white;
+}
+
+.headq a:hover {
+    background-color: #fec225;
+    border-radius: 25px;
+    color: #c81f34;
+}
+
+.hom {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.sign {}
+
+.about_us i:hover {
+    border: 5px solid white;
+    transition: border 0.2s;
+}
+
+.fa-facebook-square {
+    color: white;
+}
+
+.fab.fa-facebook-square.icon:hover {
+    color: #007bff;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fab.fa-youtube.icon:hover {
+    color: red;
+}
+
+.fab.fa-instagram.icon:hover {
+    color: #517fa4;
+}
+
+.fa-github {
+    color: white;
+}
+
+.about_us {
+    display: flex;
+    font-size: 25px;
+    justify-content: space-around;
+    margin-top: 6px;
+}
+
+.icon:hover {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+iframe {
+    width: 100%;
+}
+
+.about {
+    background-color: #ffde94;
+    height: 300px;
+}
+
+.mg {
+    padding-top: 50px;
+}
+
+.fb {
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.fb1 {
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #c81f34;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.ft {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.foot {
+    background-color: #c81f34;
+}
+
+.root {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .col-lg-5 .about_us {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row .col-lg-7 {
+    text-align: left;
+    color: white;
+}
+
+.row a {
+    margin-right: 5px;
+    color: white;
+}
+
+.ft a:hover {
+    color: #fec225;
+}
+
+.fa-shopping-cart {
+    color: wheat;
+}
+
+.cartNumber {
+    font-size: 20px;
+    position: absolute;
+}
+
+.xem {
+    position: relative;
+}
+
+.tt-query {
+    /* UPDATE: newer versions use tt-input instead of tt-query */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999;
+}
+
+.tt-menu {
+    /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
+    width: 450px;
+    margin-top: 12px;
+    padding: 8px 0;
+    right: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    color: black;
+}
+
+.tt-suggestion:hover {
+    color: #f0f0f0;
+    background-color: #0097cf;
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+.tt-cursor {
+    color: #f0f0f0;
+    background-color: #0097cf;
+}
+
+.show-all {
+    padding-top: 10px;
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: darkgray;
+    color: black;
+}
+
+.notf {
+    color: red;
+    padding: 3px 20px;
+}
+
+.show-menu {
+    display: flex;
+}
+
+.tt-input {
+    background-color: black;
+}

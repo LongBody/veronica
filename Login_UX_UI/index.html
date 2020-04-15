@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Veronicas -Fast Food 0fficial Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./logo_web.png" type="image/gif">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-3">
+                <center>
+                    <h4>Welcome to Veronica</h4>
+                    <p id="ten" style="display: none;"></p>
+                </center>
+                <br>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="demo"></div>
+    <!-- <div id="firebaseui-auth-container"></div>
+    <div id="loader">Loading...</div> -->
+    <div class="container" id="logout">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-3">
+                <center>
+                    <br>
+                    <center>
+
+                        <button type="button" id="signIn" class="btn shadow card " style="background-color: #fff;;   padding: 5px 40px;border: 1px solid white;border-radius: 10px ;   font-family: 'Roboto', sans-serif;display: inline;opacity: 0.9;"><img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg " class="text-sign"> Sign in with Google</button></center>
+                    <!-- <button type="button" id="sign" class="btn shadow card " style="background-color: #fff;;   padding: 5px 40px;border: 1px solid white;border-radius: 10px ;   font-family: 'Roboto', sans-serif;display: inline;opacity: 0.9;"><img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg " class="text-sign"> Sign in with FaceBook</button>                    </center> -->
+
+                </center>
+                <br>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js "></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js "></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDE9Vump5G9fKrqex9X4SLxmDS8ufsEdPA",
+            authDomain: "login-v.firebaseapp.com",
+            databaseURL: "https://login-v.firebaseio.com",
+            projectId: "login-v",
+            storageBucket: "login-v.appspot.com",
+            messagingSenderId: "567703182760",
+            appId: "1:567703182760:web:c8a2cd5080e5855604119d",
+            measurementId: "G-86LRTGKD3R"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+
+        function log() {
+            firebase.auth().signOut().then(function() {
+                window.location = "./index.html"
+                    // alert("long")
+
+            }, function(error) {
+                throw new Error("Failed")
+
+            });
+        }
+        // window.fbAsyncInit = function() {
+        //     FB.init({
+        //         appId: '{your-app-id}',
+        //         cookie: true,
+        //         xfbml: true,
+        //         version: '{api-version}'
+        //     });
+
+        //     FB.AppEvents.logPageView();
+
+        // };
+
+        // (function(d, s, id) {
+        //     var js, fjs = d.getElementsByTagName(s)[0];
+        //     if (d.getElementById(id)) {
+        //         return;
+        //     }
+        //     js = d.createElement(s);
+        //     js.id = id;
+        //     js.src = "https://connect.facebook.net/en_US/sdk.js";
+        //     fjs.parentNode.insertBefore(js, fjs);
+        // }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="index.js" type="module"></script>
+    <script src="./views/Sign.js" type="module"></script>
+
+</body>
+<!-- Load Facebook SDK for JavaScript -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml: true,
+            version: 'v5.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="106379390866548" theme_color="#0084ff" logged_in_greeting="Hi! How can we help you?" logged_out_greeting="Hi! How can we help you?">
+</div>
+
+</html>

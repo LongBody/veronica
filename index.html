@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Veronicas -Fast Food 0fficial Company</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="icon" href="./logo_web.png" type="image/gif">
+    <link rel="stylesheet" href="owl.carousel.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.0/jquery.typeahead.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.0/jquery.typeahead.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.0/jquery.typeahead.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.0/jquery.typeahead.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.3.0/bloodhound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.3.0/typeahead.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.3.0/typeahead.jquery.js"></script>
+
+    <link rel="stylesheet" href="owl.theme.default.css">
+    <script src="https://kit.fontawesome.com/eac90bf8e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <header id="home">
+        <section class="bg_head">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="./logo10.png" class="img-fluid ml-3" style="height: 100px;">
+
+                    </div>
+
+                    <div class="col-lg-6 mt-auto headq">
+
+
+                        <a class="nav-link active mr-2 " href="./index.html">Home <span class=" sr-only ">(current)</span></a>
+                        <a class="nav-link " href="#product ">Product</a>
+                        <a class="nav-link " href="#voucher ">Voucher</a>
+                        <a class="nav-link " href="#combo ">ComBo</a>
+                        <a class="nav-link " href="#map">Location</a>
+                        <a class="nav-link " href="#about_u">About Us</a>
+
+
+                    </div>
+
+                    <div class=" col-lg-3">
+
+                        <div class="sign" style=" display:flex;align-items: baseline;
+                        justify-content: flex-end;color: white;margin-bottom: 20px;">
+                            <div id="the-basics" class="form-group d-flex justify-content-center mr-4 ">
+                                <form id="formSearch" style="display: flex;">
+                                    <input class="typeahead form-control " id="input-search" type="text " placeholder="Searching " autocomplete="off">
+                                    <button type="button" id="search" class="btn btn-warning ml-1" data-toggle="modal" data-target="#modelId">Search</button></form>
+                            </div>
+
+                            <a href="./Login_UX_UI/index.html" id="ss">SignIn </a>
+                            <a id="ten"> </a>
+                            <i class="fas fa-user" id="dx" onclick="log()"></i>
+                        </div>
+                        <div class=" about_us d-flex align-items-end "> <a href="https://www.facebook.com/longbody.nguyen"><i class="fab fa-facebook-square icon "></i></a>
+                            <a href="https://www.youtube.com/channel/UCq4jLkYQyW3llnJm6fpaFGQ?view_as=subscriber "><i class="fab fa-youtube icon "></i></a>
+                            <a href="https://www.instagram.com/nglong3011/ "><i class="fab fa-instagram icon "></i></a>
+                            <a href="https://github.com/LongBody "> <i class="fab fa-github icon "></i> </a>
+                            <span id="check0" data-toggle="modal" data-target="#modelId"><i class="fas fa-shopping-cart icon" id="ckeck23"><span class="cartNumber" id="cart">0</span>
+
+                            </i>
+                            </span>
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+    </header>
+
+
+    <span id="xem" class="xem" data-toggle="modal" data-target="#modelId"></span>
+
+
+
+
+
+    <section class="content">
+        <!-- <div id="xem" class="xem"></div> -->
+        <div id="carouselId" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="./carousel/carousel.jpeg" width="100%" class="img-fluid" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./carousel/carousel4.jpg" width="100%" class="img-fluid" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./carousel/carousel3.jpg" width="100%" class="img-fluid" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="owl-carou " id="product">
+
+        <div class="container-fluid ">
+            <div class="owl-carousel owl-theme pr ">
+                <div class="box " id="Gà Rán">
+                    <img src="./img/ga-gion-vui-ve.png ">
+                </div>
+                <div class="box " id="Mì Ý">
+                    <img src="./img/mi-y.png ">
+                </div>
+                <div class="box " id="Hamburger">
+                    <img src="./img/burger-sandwich.png " alt=" ">
+                </div>
+                <div class="box" id="Cơm">
+                    <img src="./img/khau-phan-com.png " alt=" ">
+                </div>
+                <div class="box " id="Sushi">
+                    <img src="./img/ga_sushi-removebg-preview.png " alt=" ">
+                </div>
+                <div class="box " id="Temaki">
+                    <img class="img-fluid " src="./img/temaki-removebg-preview.png" alt=" ">
+                </div>
+                <div class="box " id="Gà nướng tiêu">
+                    <img class="card-img-top img-fluid " src="./img/gaquay-removebg-preview.png" alt=" ">
+                </div>
+                <div class="box " id="Gà chiên nước mắm">
+                    <img class="card-img-top img-fluid " src="./img/3su_shi-removebg-preview.png" alt=" ">
+                </div>
+                <div class="box " id="Kem">
+                    <img class="card-img-top img-fluid " src="./img/mon-trang-mieng.png " alt=" ">
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div id="buy"></div>
+    </section>
+
+    <section id="voucher">
+        <img src="./evoucherr.jpg" width="100%" class="img-fluid"></section>
+
+    <section class="owl-carou " id="combo">
+        <div class="container-fluid ">
+            <div class="owl-carousel owl-theme pr ">
+                <div class=" boxx mr-2" id="Combo1">
+                    <img src="./combo/combo1-removebg-preview.png" alt=" ">
+                </div>
+                <div class=" boxx mr-2" id="Combo2">
+                    <img src="./combo/combo2-removebg-preview.png " alt=" ">
+                </div>
+                <div class=" boxx mr-2" id="Combo3">
+                    <img src="./combo/combo3-removebg-preview.png" alt=" ">
+                </div>
+                <div class="boxx mr-2" id="Combo4">
+                    <img src="./combo/combo4-removebg-preview.png" alt=" ">
+                </div>
+                <div class=" boxx mr-2" id="Combo5">
+                    <img src="./combo/combo5-removebg-preview.png" alt=" ">
+                </div>
+                <div class=" boxx mr-2" id="Combo6">
+                    <img class="img-fluid " src="./combo/combo6-removebg-preview.png" alt=" ">
+                </div>
+
+
+
+            </div>
+        </div>
+        <div id="buyy"></div>
+    </section>
+
+
+    <section id="map-container">
+
+
+        <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14896.982274935408!2d105.81639646292523!3d21.022857995943426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9112347ed343cc56!2zTWluZFggY8ahIHPhu58gVGjDoG5oIEPDtG5nIChUZWNoa2lkcyDEkeG7lWkgdMOqbik!5e0!3m2!1sen!2s!4v1570782275500!5m2!1sen!2s "
+                width="100% " height="450 " frameborder="0 " style="border:0; " allowfullscreen=" "></iframe></div>
+
+    </section>
+
+    <div id="about_u" class="about">
+        <div class="container mg">
+            <div>
+                <h2>LIÊN HỆ</h2>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <div>
+                        <span>
+                            <i aria-hidden="true" class="fa fa-map fa-1x"></i>
+                        </span>
+                        <span> Đại Học FPT-Hòa Lạc</span>
+                    </div>
+                    <div>
+                        <span>
+                            <i aria-hidden="true" class="fa fa-map fa-1x"></i>
+                        </span>
+                        <span> Mind-X Thành Công</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3>FeedBack</h3>
+                    <input type="text" placeholder="Information" class="fb" id="feed">
+                    <input type="submit" placeholder="Information" class="fb1" id="add-btn" onclick="addItem()">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section>
+        <footer>
+            <footer class="page-footer font-small foot ">
+                <div class="container social ">
+                    <div class="row ">
+                        <div class="col-lg-7 "></div>
+                        <div class="col-lg-5 about_us">
+                            <a href="https://www.facebook.com/longbody.nguyen "> <i class="fab fa-facebook-square icon "></i> </a>
+                            <a href="https://www.youtube.com/channel/UCq4jLkYQyW3llnJm6fpaFGQ?view_as=subscriber "> <i class="fab fa-youtube icon "></i> </a>
+                            <a href="https://www.instagram.com/nglong3011/?hl=en "> <i class="fab fa-instagram icon "></i> </a>
+                            <a href="https://github.com/LongBody/LongBody.github.iso "> <i class="fab fa-github icon "></i> </a>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <br />
+                <div class="container">
+                    <div class=" row ft">
+                        <a href="#home ">Home</a>
+                        <a href="#product ">Product</a>
+                        <a href="#combo ">ComBo</a>
+                        <a href="#about_u ">About Us</a>
+
+                    </div>
+
+                </div>
+
+                <br />
+                <center>
+                    <div class="company-info ">
+                        <h5>Veronicas official Company</h5>
+                        <span style="color:wheat " style="font-size: 15px; "> Admin:Mind-X</span>
+                    </div>
+
+                    <div class="text-center ">
+
+                        <p style="color: black " class="marg5 "> © 2019 Copyright Micro-Star INT'L CO., LTD. All rights reserved.
+                        </p>
+                    </div>
+                </center>
+            </footer>
+    </section>
+
+
+
+
+
+
+    <!-- <div id="the-basics" class="form-group d-flex justify-content-center mt-5">
+        <label for=" "></label>
+        <input class="typeahead form-control " id="sear" type="text " placeholder="Searching " autocomplete="off">
+        <button type="submit" id="search" class="btn btn-secondary ml-2">Search</button>
+    </div> -->
+
+    <script>
+        let productB = [{
+            second_name: "Gà Rán",
+            name: "ga ran",
+            price: "25.000",
+            "picture": "./img/ga-gion-vui-ve.png"
+
+        }, {
+            second_name: "Mì Ý",
+            price: "35.000",
+            name: 'mi y',
+            "picture": "./img/mi-y.png"
+        }, {
+            second_name: "Hamburger",
+            price: "50.000",
+            name: 'hamburger',
+            "picture": "./img/burger-sandwich.png"
+        }, {
+            second_name: "Cơm",
+            price: "20.000",
+            name: 'com',
+            "picture": "./img/khau-phan-com.png"
+        }, {
+            second_name: "Sushi",
+            price: "27.000",
+            name: 'sushi',
+            "picture": "./img/3su_shi-removebg-preview.png"
+        }, {
+            second_name: "Temaki",
+            price: "55.000",
+            name: 'temaki',
+            "picture": "./img/temaki-removebg-preview.png"
+        }, {
+            second_name: "Gà nướng tiêu",
+            price: "36.000",
+            name: 'ga nuong tieu',
+            "picture": "./img/gaquay-removebg-preview.png"
+        }, {
+            second_name: "Gà chiên nước mắm",
+            price: "45.000",
+            name: 'ga chien nuoc mam',
+            "picture": "./img/3su_shi-removebg-preview.png"
+        }, {
+            second_name: "Kem",
+            price: "10.000",
+            name: 'kem',
+            "picture": "./img/mon-trang-mieng.png"
+        }, ]
+
+        var productType = new Bloodhound({
+
+            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            // 
+            local: productB
+
+        });
+        var footerTemplate = function(data) {
+            return `<h6 class="show-all ">See all of results: "` + data.query + `"</h6/>`
+        }
+
+        function checkSearch(productName) {
+            return productB.find(item => {
+                return productName === item.name
+            })
+
+        }
+        var search = document.getElementById('search')
+        var inputSearch = document.getElementById('input-search')
+        var xem = document.getElementById('xem')
+
+
+        $('#the-basics .typeahead').bind('typeahead:select', function() {
+            var item = checkSearch(inputSearch.value)
+            xem.innerHTML = renderSearch(item.picture, item.second_name, item.price)
+
+        });
+
+        $('#the-basics .typeahead').typeahead({
+            hint: true,
+            highlight: true,
+            minLength: 1,
+        }, {
+
+            display: 'name',
+            // displayKey: 'name',
+            source: productType,
+            templates: {
+                notFound: `<p class="notf"> Not Found </p>`,
+                footer: footerTemplate,
+                suggestion: function(el) {
+                    return '<div data-toggle="modal" data-target="#modelId" class="show-menu" id="redirectToSearch">' + '<img src="' + el.picture + ' " style="width:100px; margin-right:10px" />' + '<p>' + el.second_name + '</p>' + '<p>:' + el.price + 'vnd</p>' + ' </div>'
+                }
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js "></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js "></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDE9Vump5G9fKrqex9X4SLxmDS8ufsEdPA",
+            authDomain: "login-v.firebaseapp.com",
+            databaseURL: "https://login-v.firebaseio.com",
+            projectId: "login-v",
+            storageBucket: "login-v.appspot.com",
+            messagingSenderId: "567703182760",
+            appId: "1:567703182760:web:c8a2cd5080e5855604119d",
+            measurementId: "G-86LRTGKD3R"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+
+
+        // window.fbAsyncInit = function() {
+        //     FB.init({
+        //         appId: '{your-app-id}',
+        //         cookie: true,
+        //         xfbml: true,
+        //         version: '{api-version}'
+        //     });
+
+        //     FB.AppEvents.logPageView();
+
+        // };
+
+        // (function(d, s, id) {
+        //     var js, fjs = d.getElementsByTagName(s)[0];
+        //     if (d.getElementById(id)) {
+        //         return;
+        //     }
+        //     js = d.createElement(s);
+        //     js.id = id;
+        //     js.src = "https://connect.facebook.net/en_US/sdk.js";
+        //     fjs.parentNode.insertBefore(js, fjs);
+        // }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+
+    <script src="jquery.min.js "></script>
+    <script src="owl.carousel.js "></script>
+    <script src="jquery.js "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkbSzScM6mOlSFNRKsPILFNZlbGH9lQ10&callback=initMap " async=" " defer=" "></script>
+    <script src="index.js "></script>
+
+
+
+
+</body>
+<!-- Load Facebook SDK for JavaScript -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root">
+</div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml: true,
+            version: 'v5.0'
+        });
+    };
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="106379390866548" theme_color="#0084ff" logged_in_greeting="Hi! How can we help you?" logged_out_greeting="Hi! How can we help you?">
+</div>
+
+</html>
